@@ -788,6 +788,16 @@
     <!-- template js -->
     <script src="assets/js/eston.js"></script>
     <script src="assets/js/theme-toggle.js"></script>
+
+    <!-- Fallback: Hide preloader after 3 seconds if JS fails -->
+    <script>
+        setTimeout(function () {
+            var preloader = document.querySelector('.preloader');
+            if (preloader) {
+                preloader.style.display = 'none';
+            }
+        }, 3000);
+    </script>
 </body>
 
 </html>
