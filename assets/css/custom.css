@@ -185,3 +185,81 @@ body.dark-mode .theme-toggler:hover {
 .mobile-nav__wrapper.expanded .mobile-nav__content {
     transform: translateX(0);
 }
+
+/* ===== MOBILE NAVIGATION - Show Links Directly ===== */
+
+/* Hide hamburger menu button entirely */
+.mobile-nav__toggler {
+    display: none !important;
+}
+
+/* Hide mobile nav wrapper completely */
+.mobile-nav__wrapper {
+    display: none !important;
+}
+
+/* Show main menu list on all screen sizes */
+@media (max-width: 1199px) {
+    .main-menu__list {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .main-menu__list>li>a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .main-menu-three__main-menu-box {
+        display: block !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-menu__list {
+        gap: 5px;
+    }
+
+    .main-menu__list>li>a {
+        font-size: 11px;
+        padding: 6px 8px;
+    }
+
+    /* Adjust logo size on smaller screens */
+    .main-menu-three__logo img {
+        max-width: 80px !important;
+    }
+
+    /* Hide top bar on very small screens for more space */
+    .main-header-three__top {
+        display: none;
+    }
+}
+
+/* Testimonial section - simplified styling */
+.testimonial-two__single {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.testimonial-two__retting i {
+    color: #ffc107;
+    font-size: 18px;
+}
+
+.testimonial-two__client-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+body.dark-mode .testimonial-two__single {
+    background: #1e1e1e;
+}
+
+body.dark-mode .testimonial-two__client-info h3 {
+    color: #fff;
+}
