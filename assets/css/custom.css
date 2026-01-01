@@ -1,265 +1,202 @@
-/* Fourth Wall Communications - Custom CSS */
+/* ================================
+   Fourth Wall Communications - Custom CSS
+   ================================ */
 
-/* Dark Mode Variables */
-body.dark-mode {
-    --eston-white: #121212;
-    --eston-black: #ffffff;
-    --eston-gray: #a0a0a0;
-    --eston-primary: #1e1e1e;
-    --eston-border-color: #333333;
+/* RESET / BASE */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Dark Mode Overrides for specific elements that might not use variables */
+body {
+  margin: 0;
+  background: #ffffff;
+}
+
+/* ================================
+   DARK MODE VARIABLES
+   ================================ */
+body.dark-mode {
+  --eston-white: #121212;
+  --eston-black: #ffffff;
+  --eston-gray: #a0a0a0;
+  --eston-primary: #1e1e1e;
+  --eston-border-color: #333333;
+}
+
+/* ================================
+   DARK MODE GLOBAL OVERRIDES
+   ================================ */
 body.dark-mode,
 body.dark-mode .page-wrapper,
 body.dark-mode .section-title__title,
-body.dark-mode .service-one__title a,
 body.dark-mode .footer-widget__title,
 body.dark-mode .testimonial-three,
 body.dark-mode .services-three,
 body.dark-mode .services-five,
 body.dark-mode .contact-page,
-body.dark-mode .contact-one,
-body.dark-mode .footer-widget__about-text,
-body.dark-mode .footer-widget__contact p,
-body.dark-mode .footer-widget__contact p a,
-body.dark-mode .footer-widget__services-list li a,
-body.dark-mode .footer-widget__pages-list li a {
-    color: var(--eston-black);
-}
-
-body.dark-mode,
-body.dark-mode .page-wrapper,
-body.dark-mode .testimonial-three,
-body.dark-mode .services-three,
-body.dark-mode .services-five,
-body.dark-mode .contact-page,
 body.dark-mode .site-footer {
-    background-color: var(--eston-white) !important;
+  color: var(--eston-black);
+  background-color: var(--eston-white) !important;
 }
 
 body.dark-mode .testimonial-two__single,
-body.dark-mode .services-one__single,
-body.dark-mode .contact-page__single,
 body.dark-mode .services-three__single {
-    background-color: var(--eston-primary) !important;
-    border-color: var(--eston-border-color);
+  background-color: var(--eston-primary) !important;
+  border-color: var(--eston-border-color);
+}
+
+/* ================================
+   HEADER / NAV
+   ================================ */
+.main-header-three__top {
+  background-color: #143f8d !important;
 }
 
 body.dark-mode .main-header-three__top {
-    background-color: #0d2b63 !important;
-    /* Darker blue for top bar */
+  background-color: #0d2b63 !important;
 }
 
-/* Top Bar Color: Blue instead of Red */
-.main-header-three__top {
-    background-color: #143f8d !important;
-}
-
-/* Header/Menu Background: Use variable for theme switching */
 .main-header-three,
 .main-menu-three__wrapper,
 .stricky-header.stricked-menu {
-    background-color: var(--eston-white) !important;
-    transition: background-color 0.3s ease;
+  background-color: var(--eston-white) !important;
 }
 
-/* Logo Size Constraint */
 .main-menu-three__logo img {
-    max-width: 150px !important;
-    height: auto !important;
+  max-width: 150px !important;
 }
 
-/* Footer Logo Size */
 .footer-widget__logo img {
-    max-width: 120px !important;
-    height: auto !important;
+  max-width: 120px !important;
 }
 
-/* Menu Text Color */
-.main-menu__list>li>a {
-    color: var(--eston-black) !important;
+.main-menu__list > li > a {
+  color: var(--eston-black) !important;
 }
 
-.main-menu__list>li>a:hover,
-.main-menu__list>li.current>a {
-    color: #143f8d !important;
+.main-menu__list > li > a:hover {
+  color: #143f8d !important;
 }
 
-/* Mobile Nav Toggle Icon */
-.mobile-nav__toggler {
-    color: var(--eston-black) !important;
-}
-
-/* Theme Toggler Button */
+/* THEME TOGGLER */
 .theme-toggler {
-    background: transparent;
-    border: 2px solid #143f8d;
-    color: #143f8d;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-left: 20px;
-}
-
-.theme-toggler:hover {
-    background-color: #143f8d;
-    color: #ffffff;
+  background: transparent;
+  border: 2px solid #143f8d;
+  color: #143f8d;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 body.dark-mode .theme-toggler {
-    border-color: #ffffff;
-    color: #ffffff;
+  border-color: #fff;
+  color: #fff;
 }
 
-body.dark-mode .theme-toggler:hover {
-    background-color: #ffffff;
-    color: #143f8d;
+/* ================================
+   PRICING SECTION (FIXED + MATCHED)
+   ================================ */
+.pricing-section {
+  padding: 100px 0;
 }
 
-/* Sidebar Icon */
-.main-menu-three__nav-sidebar-icon a span {
-    background-color: var(--eston-black) !important;
+.pricing-card {
+  padding: 30px 25px;
+  border-radius: 14px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  transition: transform 0.3s ease;
 }
 
-/* --- Mobile Navigation Left Slide Bar (Override) --- */
-.mobile-nav__wrapper {
-    /* Default state: cover screen but hidden */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background-color: transparent;
-    transform: translateX(0);
-    /* Don't move the wrapper */
-    visibility: hidden;
-    transition: visibility 0.4s ease, transform 0s;
-    opacity: 1 !important;
-    /* Ensure opacity doesn't hide it */
+.pricing-card:hover {
+  transform: translateY(-8px);
 }
 
-.mobile-nav__wrapper.expanded {
-    visibility: visible;
+.pricing-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
-.mobile-nav__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    cursor: pointer;
-    display: block !important;
-    /* Ensure it's not hidden by default styles */
+.pricing-card .price {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 25px;
 }
 
-.mobile-nav__wrapper.expanded .mobile-nav__overlay {
-    opacity: 1;
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
 }
 
-.mobile-nav__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 100%;
-    background-color: var(--eston-black, #1a1a1a);
-    transform: translateX(-100%);
-    transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-    z-index: 10;
-    /* Add styling for content */
-    padding: 30px 20px;
-    overflow-y: auto;
+.pricing-card ul li {
+  font-size: 15px;
+  margin: 12px 0;
 }
 
-.mobile-nav__wrapper.expanded .mobile-nav__content {
-    transform: translateX(0);
+/* BUTTON */
+.pricing-card .thm-btn {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
 }
 
-/* ===== MOBILE NAVIGATION - Show Links Directly ===== */
-
-/* Hide hamburger menu button entirely */
-.mobile-nav__toggler {
-    display: none !important;
+/* COLOR THEMES */
+.pricing-card.starter {
+  background: linear-gradient(180deg, #1e6fd9, #0b3d91);
 }
 
-/* Hide mobile nav wrapper completely */
-.mobile-nav__wrapper {
-    display: none !important;
+.pricing-card.professional {
+  background: linear-gradient(180deg, #6a3bb7, #3b1d6d);
 }
 
-/* Show main menu list on all screen sizes */
-@media (max-width: 1199px) {
-    .main-menu__list {
-        display: flex !important;
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .main-menu__list>li>a {
-        font-size: 12px;
-        padding: 8px 10px;
-    }
-
-    .main-menu-three__main-menu-box {
-        display: block !important;
-    }
+.pricing-card.premium {
+  background: linear-gradient(180deg, #f2b233, #8c5a00);
 }
 
-@media (max-width: 767px) {
-    .main-menu__list {
-        gap: 5px;
-    }
-
-    .main-menu__list>li>a {
-        font-size: 11px;
-        padding: 6px 8px;
-    }
-
-    /* Adjust logo size on smaller screens */
-    .main-menu-three__logo img {
-        max-width: 80px !important;
-    }
-
-    /* Hide top bar on very small screens for more space */
-    .main-header-three__top {
-        display: none;
-    }
+/* DARK MODE PRICING */
+body.dark-mode .pricing-card {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.7);
 }
 
-/* Testimonial section - simplified styling */
+/* ================================
+   TESTIMONIAL
+   ================================ */
 .testimonial-two__single {
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 10px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
 }
 
 .testimonial-two__retting i {
-    color: #ffc107;
-    font-size: 18px;
-}
-
-.testimonial-two__client-info h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #333;
+  color: #ffc107;
 }
 
 body.dark-mode .testimonial-two__single {
-    background: #1e1e1e;
+  background: #1e1e1e;
 }
 
-body.dark-mode .testimonial-two__client-info h3 {
-    color: #fff;
+/* ================================
+   RESPONSIVE
+   ================================ */
+@media (max-width: 767px) {
+  .pricing-section {
+    padding: 60px 0;
+  }
+
+  .main-menu-three__logo img {
+    max-width: 80px !important;
+  }
+
+  .main-header-three__top {
+    display: none;
+  }
 }
