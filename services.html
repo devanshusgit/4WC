@@ -5,20 +5,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FWC</title>
-
-    <!-- Favicons -->
+    <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="FWC - Fourth Wall Communications" />
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <!-- Vendor CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
     <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="assets/vendors/eston-icons/style.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
 
-    <!-- Template CSS -->
+    <!-- template styles -->
     <link rel="stylesheet" href="assets/css/eston.css" />
     <link rel="stylesheet" href="assets/css/eston-responsive.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
@@ -26,149 +46,454 @@
 
 <body>
 
-<div class="page-wrapper">
 
-    <!-- HEADER -->
-    <header class="main-header-three">
-        <div class="main-header-three__top">
-            <div class="main-header-three__top-inner">
-                <ul class="list-unstyled main-header-three__contact-info">
-                    <li><a href="mailto:hello@4wc.in">hello@4wc.in</a></li>
-                    <li><a href="tel:+919892100713">+91 9892100713</a></li>
-                </ul>
-                <p class="main-header-three__top-text">Best Film Production In <span>Mumbai</span></p>
-            </div>
-        </div>
 
-        <nav class="main-menu main-menu-three">
-            <div class="main-menu-three__wrapper">
-                <div class="main-menu-three__wrapper-inner">
-                    <div class="main-menu-three__logo">
-                        <a href="index.html">
-                            <img src="assets/images/resources/fwc-logo.png" alt="FWC">
-                        </a>
-                    </div>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+    <!-- /.preloader -->
 
-                    <ul class="main-menu__list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+
+
+
+
+
+    <div class="page-wrapper">
+        <header class="main-header-three">
+            <div class="main-header-three__top">
+                <div class="main-header-three__top-inner">
+                    <ul class="list-unstyled main-header-three__contact-info">
+                        <li><a href="mailto:hello@4wc.in">hello@4wc.in</a></li>
+                        <li><a href="tel:+919892100713">+91 9892100713</a></li>
                     </ul>
-
-                    <button class="theme-toggler" onclick="toggleTheme()">
-                        <i class="fas fa-moon"></i>
-                    </button>
+                    <p class="main-header-three__top-text">Best Film Production In <span>Mumbai</span></p>
                 </div>
             </div>
-        </nav>
-    </header>
+            <nav class="main-menu main-menu-three">
+                <div class="main-menu-three__wrapper">
+                    <div class="main-menu-three__wrapper-inner">
+                        <div class="main-menu-three__logo">
+                            <a href="index.html"><img src="assets/images/resources/fwc-logo.png"
+                                    alt="Fourth Wall Communications"></a>
+                        </div>
+                        <div class="main-menu-three__main-menu-box">
+                            <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                            <ul class="main-menu__list">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
 
-    <!-- PAGE HEADER -->
-    <section class="page-header">
-        <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/services-banner.png);"></div>
-        <div class="container">
-            <div class="page-header__inner">
-                <h2>Our Services</h2>
+                                <li>
+                                    <a href="services.html">Services</a>
+                                </li>
+
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main-menu-three__right">
+                            <button class="theme-toggler" onclick="toggleTheme()" aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="stricky-header stricked-menu main-menu main-menu-three">
+            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+        </div><!-- /.stricky-header -->
+
+        <!--Page Header Start-->
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/services-banner.png);">
+            </div>
+            <div class="container">
+                <div class="page-header__inner">
+                    <p>Fourth Wall Communications</p>
+                    <h2>What We Do</h2>
+                    <div class="thm-breadcrumb__inner">
+                        <ul class="thm-breadcrumb list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><span>/</span></li>
+                            <li>Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Page Header End-->
+
+        <!--Services Five Start-->
+        <!--Services Five Start-->
+        <section class="services-three">
+            <div class="container">
+                <div class="services-three__bottom">
+                    <div class="row">
+                        <!--Services Three Single Start-->
+                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="services-three__single">
+                                <div class="services-three__img-box">
+                                    <div class="services-three__img">
+                                        <img src="assets/images/immp/image 2.1.jpg" alt="">
+                                    </div>
+                                    <h3 class="services-three__title"><a href="creative-direction.html">Photography</a>
+                                    </h3>
+                                </div>
+                                <div class="services-three__content">
+                                    <p class="services-three__text">Professional photography services for all your
+                                        needs.</p>
+                                    <a href="creative-direction.html" class="services-three__read-more">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Services Three Single End-->
+                        <!--Services Three Single Start-->
+                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                            <div class="services-three__single">
+                                <div class="services-three__img-box">
+                                    <div class="services-three__img">
+                                        <img src="assets/images/immp/image 2.2.jpg" alt="">
+                                    </div>
+                                    <h3 class="services-three__title"><a href="film-production.html">Videography</a>
+                                    </h3>
+                                </div>
+                                <div class="services-three__content">
+                                    <p class="services-three__text">High-quality videography to capture your moments.
+                                    </p>
+                                    <a href="film-production.html" class="services-three__read-more">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Services Three Single End-->
+                        <!--Services Three Single Start-->
+                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="services-three__single">
+                                <div class="services-three__img-box">
+                                    <div class="services-three__img">
+                                        <img src="assets/images/immp/image 2.3.jpg" alt="">
+                                    </div>
+                                    <h3 class="services-three__title"><a href="content-production.html">Video
+                                            Solution</a></h3>
+                                </div>
+                                <div class="services-three__content">
+                                    <p class="services-three__text">Complete video solutions for your business.</p>
+                                    <a href="content-production.html" class="services-three__read-more">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Services Three Single End-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Services Five End-->
+
+        <!--Feature One Start-->
+
+<!-- Testimonial Section Start -->
+<section class="testimonial-three">
+    <div class="container">
+        <div class="section-title text-left">
+            <p class="section-title__tagline">Testimonials</p>
+            <div class="section-title__title-box">
+                <h2 class="section-title__title">What Our Clients Say</h2>
+                <p>Real feedback from people we’ve worked with</p>
             </div>
         </div>
-    </section>
 
-    <!-- SERVICES -->
-    <section class="services-three">
-        <div class="container">
+        <div class="testimonial-three__bottom">
             <div class="row">
-                <div class="col-xl-4 col-lg-4">
-                    <div class="services-three__single">
-                        <h3>Photography</h3>
-                        <p>Professional photography services.</p>
-                    </div>
-                </div>
 
-                <div class="col-xl-4 col-lg-4">
-                    <div class="services-three__single">
-                        <h3>Videography</h3>
-                        <p>High-quality video production.</p>
-                    </div>
-                </div>
-
-                <div class="col-xl-4 col-lg-4">
-                    <div class="services-three__single">
-                        <h3>Video Solutions</h3>
-                        <p>End-to-end video solutions.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRICING -->
-    <section class="pricing-section">
-        <div class="container">
-            <div class="section-title text-center">
-                <p class="section-title__tagline">Pricing</p>
-                <h2 class="section-title__title">Our Video Packages</h2>
-            </div>
-
-            <div class="row justify-content-center">
-
+                <!-- Testimonial 1 -->
                 <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="pricing-card starter">
-                        <h3>Starter</h3>
-                        <div class="price">₹1,00,000</div>
-                        <ul>
-                            <li>1 Minute Video</li>
-                            <li>Basic Editing</li>
-                            <li>Single Location Shoot</li>
-                            <li>Royalty-Free Music</li>
-                        </ul>
-                        <a href="contact.html" class="thm-btn">Get Started</a>
+                    <div class="testimonial-two__single">
+                        <div class="testimonial-two__retting">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            “The team understood our brief perfectly and delivered a video that exceeded expectations.”
+                        </p>
+                        <div class="testimonial-two__client-img-and-info">
+                            <div class="testimonial-two__client-img">
+                                <img src="assets/images/testimonial/testimonial-2-1.jpg" alt="">
+                            </div>
+                            <div class="testimonial-two__client-info">
+                                <h3>Yash Shah</h3>
+                                <span>Marketing Manager</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Testimonial 2 -->
                 <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="pricing-card professional">
-                        <h3>Professional</h3>
-                        <div class="price">₹1,75,000</div>
-                        <ul>
-                            <li>3–4 Minute Video</li>
-                            <li>Advanced Editing</li>
-                            <li>Multi-Location Shoot</li>
-                            <li>Motion Graphics</li>
-                        </ul>
-                        <a href="contact.html" class="thm-btn">Choose Plan</a>
+                    <div class="testimonial-two__single">
+                        <div class="testimonial-two__retting">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            “Professional, punctual, and creative. Our brand film turned out exactly how we imagined.”
+                        </p>
+                        <div class="testimonial-two__client-img-and-info">
+                            <div class="testimonial-two__client-img">
+                                <img src="assets/images/testimonial/testimonial-2-2.jpg" alt="">
+                            </div>
+                            <div class="testimonial-two__client-info">
+                                <h3>Rohit Mehta</h3>
+                                <span>Startup Founder</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Testimonial 3 -->
                 <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="pricing-card premium">
-                        <h3>Premium</h3>
-                        <div class="price">₹4,75,000</div>
-                        <ul>
-                            <li>5–7 Minute Video</li>
-                            <li>Cinematic Quality</li>
-                            <li>Drone & 4K Footage</li>
-                            <li>Full Concept Development</li>
-                        </ul>
-                        <a href="contact.html" class="thm-btn">Get The Best</a>
+                    <div class="testimonial-two__single">
+                        <div class="testimonial-two__retting">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            “Smooth coordination and great attention to detail. Highly recommended for video projects.”
+                        </p>
+                        <div class="testimonial-two__client-img-and-info">
+                            <div class="testimonial-two__client-img">
+                                <img src="assets/images/testimonial/testimonial-2-3.jpg" alt="">
+                            </div>
+                            <div class="testimonial-two__client-info">
+                                <h3>Ananya Kapoor</h3>
+                                <span>Brand Consultant</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- Testimonial Section End -->
 
-    <!-- FOOTER -->
+    
+    <!-- Pricing Section Start -->
+<section class="pricing-section">
+    <div class="container">
+        <div class="section-title text-center">
+            <p class="section-title__tagline">Pricing</p>
+            <h2 class="section-title__title">Our Video Packages</h2>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <!-- Starter Plan -->
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                <div class="pricing-card starter">
+                    <h3>Starter</h3>
+                    <div class="price">$1,500</div>
+                    <ul>
+                        <li>1 Minute Video</li>
+                        <li>Basic Editing</li>
+                        <li>1 Location Shoot</li>
+                        <li>Royalty-Free Music</li>
+                    </ul>
+                    <a href="contact.html" class="thm-btn">Get Started</a>
+                </div>
+            </div>
+
+            <!-- Professional Plan -->
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                <div class="pricing-card professional active">
+                    <h3>Professional</h3>
+                    <div class="price">$3,500</div>
+                    <ul>
+                        <li>3–4 Minute Video</li>
+                        <li>Advanced Editing</li>
+                        <li>Multi-Location Shoot</li>
+                        <li>Motion Graphics</li>
+                    </ul>
+                    <a href="contact.html" class="thm-btn">Choose Plan</a>
+                </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                <div class="pricing-card premium">
+                    <h3>Premium</h3>
+                    <div class="price">$6,500</div>
+                    <ul>
+                        <li>5–7 Minute Video</li>
+                        <li>Cinematic Quality</li>
+                        <li>Drone & 4K Footage</li>
+                        <li>Full Concept Development</li>
+                    </ul>
+                    <a href="contact.html" class="thm-btn">Get The Best</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Pricing Section End -->
+
+    <!--Site Footer Start-->
     <footer class="site-footer site-footer-three">
         <div class="container">
-            <p style="text-align:center;">© Fourth Wall Communications</p>
+            <div class="site-footer__top">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="footer-widget__column footer-widget__about">
+                            <div class="footer-widget__logo">
+                                <a href="index.html"><img src="assets/images/resources/fwc-logo.png" alt=""></a>
+                            </div>
+                            <p class="footer-widget__about-text">10th Floor, Building 4, North Wing, NESCO IT Park,
+                                Western Express Highway, Mumbai - 400063</p>
+                            <div class="footer-widget__contact">
+                                <p><a href="mailto:hello@4wc.in">hello@4wc.in</a></p>
+                                <p><a href="tel:+919892100713">+91 9892100713</a></p>
+                            </div>
+                            <div class="site-footer__social">
+                                <!-- Socials removed as requested -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="footer-widget__column footer-widget__services">
+                            <div class="footer-widget__title-box">
+                                <h3 class="footer-widget__title">Services</h3>
+                            </div>
+                            <ul class="footer-widget__services-list list-unstyled">
+                                <li><a href="#">Photography</a></li>
+                                <li><a href="#">Videography</a></li>
+                                <li><a href="#">Video Solution</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="footer-widget__column footer-widget__pages">
+                            <div class="footer-widget__title-box">
+                                <h3 class="footer-widget__title">Our Pages</h3>
+                            </div>
+                            <ul class="footer-widget__pages-list list-unstyled">
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="refund-policy.html">Refund Policy</a></li>
+                                <li><a href="terms-conditions.html">Terms & Condition</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <div class="site-footer__bottom-inner">
+                    <p class="site-footer__bottom-text"></p>
+                </div>
+            </div>
         </div>
     </footer>
+    <!--Site Footer End-->
 
-</div>
+    </div><!-- /.page-wrapper -->
 
-<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/theme-toggle.js"></script>
 
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/fwc-logo.png" width="105"
+                        alt="" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container">
+                <ul class="main-menu__list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:hello@4wc.in">hello@4wc.in</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:+919892100713">+91 9892100713</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+
+
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/hover-animated/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/odometer/odometer.min.js"></script>
+    <script src="assets/vendors/swiper/swiper.min.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/jquery.circle-type/jquery.circleType.js"></script>
+    <script src="assets/vendors/jquery.circle-type/jquery.lettering.min.js"></script>
+    <script src="assets/vendors/sidebar-content/jquery-sidebar-content.js"></script>
+    <script src="assets/vendors/marquee/marquee.min.js"></script>
+    <script src="assets/vendors/hover-animated/charming.min.js"></script>
+    <script src="assets/vendors/hover-animated/demo.js"></script>
+    <script src="assets/vendors/hover-animated/tweenMax.min.js"></script>
+
+
+
+
+    <!-- template js -->
+    <script src="assets/js/eston.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
 </body>
-</html>
+
+</html>    
