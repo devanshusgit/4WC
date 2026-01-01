@@ -229,3 +229,31 @@ body.dark-mode .testimonial-two__single {
     display: none;
   }
 }
+/* ================================
+   HARD FIX: TESTIMONIAL LEFT SHIFT
+   ================================ */
+
+/* Remove page-wrapper padding only for testimonials */
+.testimonial-three {
+    margin-left: -60px;
+    margin-right: -60px;
+}
+
+/* Re-center container properly */
+.testimonial-three .container {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/* Ensure cards are centered */
+.testimonial-three__bottom .row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Equal height cards */
+.testimonial-two__single {
+    height: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+}
