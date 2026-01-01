@@ -2,7 +2,9 @@
    Fourth Wall Communications - Custom CSS
    ================================ */
 
-/* RESET / BASE */
+/* ================================
+   RESET / BASE
+   ================================ */
 * {
   box-sizing: border-box;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -79,7 +81,9 @@ body.dark-mode .main-header-three__top {
   color: #143f8d !important;
 }
 
-/* THEME TOGGLER */
+/* ================================
+   THEME TOGGLER
+   ================================ */
 .theme-toggler {
   background: transparent;
   border: 2px solid #143f8d;
@@ -94,12 +98,12 @@ body.dark-mode .main-header-three__top {
 }
 
 body.dark-mode .theme-toggler {
-  border-color: #fff;
-  color: #fff;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
 /* ================================
-   PRICING SECTION (FIXED + MATCHED)
+   PRICING SECTION
    ================================ */
 .pricing-section {
   padding: 100px 0;
@@ -168,18 +172,43 @@ body.dark-mode .pricing-card {
 }
 
 /* ================================
-   TESTIMONIAL
+   TESTIMONIAL SECTION (FIXED)
    ================================ */
+
+/* Center cards properly */
+.testimonial-three__bottom .row {
+  justify-content: center;
+}
+
+/* Card styling + equal height */
 .testimonial-two__single {
-  padding: 20px;
+  padding: 25px;
   background: #f8f9fa;
-  border-radius: 10px;
+  border-radius: 12px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Rating stars */
+.testimonial-two__retting {
+  margin-bottom: 12px;
 }
 
 .testimonial-two__retting i {
   color: #ffc107;
+  font-size: 16px;
 }
 
+/* Text */
+.testimonial-text {
+  margin: 15px 0 20px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Dark mode testimonial */
 body.dark-mode .testimonial-two__single {
   background: #1e1e1e;
 }
