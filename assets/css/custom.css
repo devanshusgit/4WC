@@ -67,13 +67,13 @@ body.dark-mode .main-header-three__top {
 
 /* ===== LOGO SIZE (DESKTOP) ===== */
 .main-menu-three__logo img {
-  width: 220px;        /* 🔥 CHANGE SIZE HERE */
+  width: 250px;        /* 🔥 CHANGE SIZE HERE */
   height: auto;
 }
 
 /* Footer logo */
 .footer-widget__logo img {
-  width: 160px;
+  width: 150px;
   height: auto;
 }
 
