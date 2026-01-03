@@ -257,3 +257,9 @@ body.dark-mode .testimonial-two__single {
     max-width: 360px;
     margin: 0 auto;
 }
+/* HEADER LOGO SIZE */
+.main-menu-three__logo img {
+  width: 180px;   /* change this value */
+  height: auto;
+}
+
