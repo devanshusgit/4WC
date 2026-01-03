@@ -65,14 +65,19 @@ body.dark-mode .main-header-three__top {
   background-color: var(--eston-white) !important;
 }
 
+/* ===== LOGO SIZE (DESKTOP) ===== */
 .main-menu-three__logo img {
-  max-width: 150px !important;
+  width: 220px;        /* 🔥 CHANGE SIZE HERE */
+  height: auto;
 }
 
+/* Footer logo */
 .footer-widget__logo img {
-  max-width: 120px !important;
+  width: 160px;
+  height: auto;
 }
 
+/* Menu links */
 .main-menu__list > li > a {
   color: var(--eston-black) !important;
 }
@@ -145,7 +150,7 @@ body.dark-mode .theme-toggler {
   margin: 12px 0;
 }
 
-/* BUTTON */
+/* Pricing buttons */
 .pricing-card .thm-btn {
   padding: 12px 24px;
   font-size: 14px;
@@ -153,7 +158,7 @@ body.dark-mode .theme-toggler {
   border-radius: 6px;
 }
 
-/* COLOR THEMES */
+/* Pricing colors */
 .pricing-card.starter {
   background: linear-gradient(180deg, #1e6fd9, #0b3d91);
 }
@@ -166,100 +171,43 @@ body.dark-mode .theme-toggler {
   background: linear-gradient(180deg, #f2b233, #8c5a00);
 }
 
-/* DARK MODE PRICING */
-body.dark-mode .pricing-card {
-  box-shadow: 0 12px 30px rgba(0,0,0,0.7);
-}
-
 /* ================================
    TESTIMONIAL SECTION (FIXED)
    ================================ */
-
-/* Center cards properly */
 .testimonial-three__bottom .row {
+  display: flex;
   justify-content: center;
 }
 
-/* Card styling + equal height */
 .testimonial-two__single {
   padding: 25px;
   background: #f8f9fa;
   border-radius: 12px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  max-width: 360px;
+  margin: 0 auto;
 }
 
-/* Rating stars */
-.testimonial-two__retting {
-  margin-bottom: 12px;
-}
-
-.testimonial-two__retting i {
-  color: #ffc107;
-  font-size: 16px;
-}
-
-/* Text */
-.testimonial-text {
-  margin: 15px 0 20px;
-  line-height: 1.6;
-  font-size: 15px;
-}
-
-/* Dark mode testimonial */
 body.dark-mode .testimonial-two__single {
   background: #1e1e1e;
 }
 
 /* ================================
-   RESPONSIVE
+   RESPONSIVE (MOBILE)
    ================================ */
 @media (max-width: 767px) {
+
   .pricing-section {
     padding: 60px 0;
   }
 
+  /* 🔥 LOGO SIZE (MOBILE) */
   .main-menu-three__logo img {
-    max-width: 80px !important;
+    width: 120px;
+    height: auto;
   }
 
   .main-header-three__top {
     display: none;
   }
 }
-/* ================================
-   HARD FIX: TESTIMONIAL LEFT SHIFT
-   ================================ */
-
-/* Remove page-wrapper padding only for testimonials */
-.testimonial-three {
-    margin-left: -60px;
-    margin-right: -60px;
-}
-
-/* Re-center container properly */
-.testimonial-three .container {
-    padding-left: 60px;
-    padding-right: 60px;
-}
-
-/* Ensure cards are centered */
-.testimonial-three__bottom .row {
-    display: flex;
-    justify-content: center;
-}
-
-/* Equal height cards */
-.testimonial-two__single {
-    height: 100%;
-    max-width: 360px;
-    margin: 0 auto;
-}
-/* HEADER LOGO SIZE */
-.main-menu-three__logo img {
-  width: 220px;   /* change this value */
-  height: auto;
-}
-
